@@ -1,0 +1,16 @@
+{
+    "name": "hexlet/code",
+    "autoload": {
+        "psr-4": {
+            "Hexlet\\Code\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Алексей Кривенцов"
+        }
+    ],
+    "require": {
+        "docopt/docopt": "^1.0"
+    }
+}
