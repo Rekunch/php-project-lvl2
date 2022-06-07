@@ -1,4 +1,7 @@
+#!/usr/bin/env php
+
 <?php
+
 $doc = <<<DOC
 Naval Fate.
 
