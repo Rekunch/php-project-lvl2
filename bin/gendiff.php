@@ -1,6 +1,8 @@
-
+#!/usr/bin/env php
 
 <?php
+
+usr function Differ\Cli\start;
 
 $autoloadPath1 = __DIR__ . '/../../../autoload.php';
 $autoloadPath2 = __DIR__ . '/../vendor/autoload.php';
@@ -11,6 +13,4 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-use function Differ\Cli\start;
-
-echo start();
+start();
