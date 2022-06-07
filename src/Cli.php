@@ -20,6 +20,8 @@ function start(): string
       --format <fmt>                Report format [default: stylish]
     DOC;
 
-    $args = Docopt::handle($doc, ['version' => 'gendiff v: 0.0.1']);
-
+    $result = Docopt::handle($doc, array('version' => '0.0.1'));
+    $diff = genDiff($result->args["<firstFile>"], $result->args["<secondFile>"], $result->args["--format"]);
+    echo $diff;
+    echo "\n";
 }
