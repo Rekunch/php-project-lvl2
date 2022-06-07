@@ -10,9 +10,9 @@ function start(): string
     Generate diff
     
     Usage:
-      gendiff (-h|--help)
-      gendiff (-v|--version)
-      gendiff [--format <fmt>] <firstFile> <secondFile>
+      gendiff.php (-h|--help)
+      gendiff.php (-v|--version)
+      gendiff.php [--format <fmt>] <firstFile> <secondFile>
     
     Options:
       -h --help                     Show this screen
