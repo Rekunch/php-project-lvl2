@@ -3,7 +3,7 @@
 namespace Differ\Cli;
 
 use Docopt;
-use Differ\Differ\genDiff;
+use function Differ\Differ\genDiff;
 
 function start(): string
 {
@@ -24,6 +24,6 @@ DOCOPT;
 
     $result = Docopt::handle($doc, array('version' => '0.0.1'));
     $diff = genDiff($result->args["<firstFile>"], $result->args["<secondFile>"], $result->args["--format"]);
-    echo $diff;
+    return $diff;
     echo "\n";
 }
