@@ -11,8 +11,8 @@ class StackTest extends TestCase
 {
 	public function testGenDiff()
 	{
-		$jsonBefore = json_decode(file_get_contents(../tests/fixtures/file1.json);
-		$jsonAfter = json_decode(file_get_contents(../tests/fixtures/file2.json);
+		$jsonBefore = json_decode(file_get_contents(tests/fixtures/file1.json));
+		$jsonAfter = json_decode(file_get_contents(tests/fixtures/file2.json));
 		$difference =	
 "{
   - follow: false
