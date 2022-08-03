@@ -52,7 +52,7 @@ function genDiff($file1 , $file2)
     );
     unset($result[0]);
     $result = implode("\n", $result);
-    $result = "{\n{$result}\n}\n";
+    $result = "{\n{$result}\n}";
     return($result);
 }
    
