@@ -9,6 +9,9 @@ use  function Differ\Differ\genDiff;
 
 class genDiffTest extends TestCase
 {
+	/**
+	 * @covers genDiffTest
+	 */
 	public function testGenDiff()
 	{
 	//	$jsonBefore = json_decode(file_get_contents('tests/fixtures/file1.json'));
