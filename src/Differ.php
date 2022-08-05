@@ -47,7 +47,7 @@ function genDiff($file1, $file2)
     $num = 4;
     usort(
         $result,
-            function ($v1, $v2) use ($num) {
+        function ($v1, $v2) use ($num) {
                 return substr($v1, $num - 1, 1) > substr($v2, $num - 1, 1) ? 1 : -1;
             }
     );
