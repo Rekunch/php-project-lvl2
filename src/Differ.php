@@ -49,11 +49,10 @@ function genDiff($file1, $file2)
         $result,
         function ($v1, $v2) use ($num) {
                 return substr($v1, $num - 1, 1) > substr($v2, $num - 1, 1) ? 1 : -1;
-            }
+        }
     );
     unset($result[0]);
     $result = implode("\n", $result);
     $result = "{\n{$result}\n}";
     return($result);
 }
-   
