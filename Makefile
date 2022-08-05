@@ -6,3 +6,5 @@ lint:
 
 test:
 	composer exec --verbose phpunit tests
+
+test-coverage:
