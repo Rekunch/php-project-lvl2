@@ -35,7 +35,7 @@ function genDiff($file1, $file2)
                 $result .= " {$two} {$key2}: {$value2}\n";
             }
             if (array_key_exists($key1, $array2) === false) {
-                    $result .= " {$one} {$key1}: {$value1}\n";      
+                    $result .= " {$one} {$key1}: {$value1}\n";
             }
             if (array_key_exists($key2, $array1) === false) {
                 $result .= " {$two} {$key2}: {$value2}\n";
@@ -45,10 +45,11 @@ function genDiff($file1, $file2)
     $result = explode("\n", $result);
     $result = array_unique($result);
     $num = 4;
-    usort($result,
-          function ($v1, $v2) use ($num) {
-            return substr($v1, $num - 1, 1) > substr($v2, $num - 1, 1) ? 1 : -1;
-        }
+    usort(
+        $result,
+            function ($v1, $v2) use ($num) {
+                return substr($v1, $num - 1, 1) > substr($v2, $num - 1, 1) ? 1 : -1;
+            }
     );
     unset($result[0]);
     $result = implode("\n", $result);
